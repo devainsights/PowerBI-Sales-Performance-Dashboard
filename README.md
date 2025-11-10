@@ -28,3 +28,7 @@ Link: https://www.kaggle.com/datasets/kyanyoga/sample-sales-data
 | 5 | Who are the top customers based on revenue? |
 
 ### 🧮 Measures Used (DAX)
+Total Sales = SUM('sales_data_sample'[SALES])
+Total Orders = DISTINCTCOUNT('sales_data_sample'[ORDERNUMBER])
+Average Order Value = [Total Sales] / [Total Orders]
+Monthly Sales = CALCULATE([Total Sales], DATESMTD('sales_data_sample'[ORDERDATE]))
