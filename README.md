@@ -32,3 +32,14 @@ Total Sales = SUM('sales_data_sample'[SALES])
 Total Orders = DISTINCTCOUNT('sales_data_sample'[ORDERNUMBER])
 Average Order Value = [Total Sales] / [Total Orders]
 Monthly Sales = CALCULATE([Total Sales], DATESMTD('sales_data_sample'[ORDERDATE]))
+
+### 🔗 Live Dashboard
+https://app.powerbi.com/reportEmbed?reportId=988ef8fd-4258-41b6-a537-8bfbae56e0e4&autoAuth=true&ctid=68fa027e-d599-4724-8870-99bdcaded2f9&actionBarEnabled=true
+
+### 📂 Repository Structure
+/PowerBI-Sales-Performance-Dashboard
+├── dashboard.pbix
+├── Dashboard.pdf
+├── /screenshots
+└── README.md
+
